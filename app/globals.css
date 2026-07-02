@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #fdfcfa;
+    --foreground: #182635;
+    --coral: #f0785f;
+    --coral-dark: #d9634c;
+    --teal: #2e8a9a;
+    --teal-dark: #1f6c7a;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+  }
+
+  ::selection {
+    @apply bg-coral-soft text-foreground;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 md:py-30 lg:py-40;
+  }
+
+  .container-custom {
+    @apply mx-auto w-full max-w-container px-container;
+  }
+
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+  }
+
+  .text-gradient-sand {
+    background: linear-gradient(180deg, #f3eee6 0%, #fdfcfa 100%);
+  }
+
+  .wave-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 80' preserveAspectRatio='none'%3E%3Cpath fill='%231a5a66' fill-opacity='0.15' d='M0 40 Q360 80 720 40 T1440 40 V80 H0 Z'/%3E%3Cpath fill='%231a5a66' fill-opacity='0.08' d='M0 50 Q360 20 720 50 T1440 50 V80 H0 Z'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 1440px 80px;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
