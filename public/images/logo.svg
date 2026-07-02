@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" role="img" aria-label="Rey Poke logo">
+  <!-- Placeholder circular logo: sunset semicircle + bowl + wordmark + waves -->
+  <circle cx="100" cy="100" r="98" fill="#FDFCFA" stroke="#E7E2D9" stroke-width="2"/>
+  <!-- Sunset semicircle -->
+  <path d="M20 110 A80 80 0 0 1 180 110 Z" fill="#F0785F" opacity="0.85"/>
+  <!-- Bowl -->
+  <ellipse cx="100" cy="95" rx="42" ry="14" fill="#182635" opacity="0.9"/>
+  <path d="M58 95 Q100 130 142 95" fill="#182635" opacity="0.85"/>
+  <!-- Bowl contents -->
+  <circle cx="88" cy="88" r="8" fill="#2E8A9A"/>
+  <circle cx="105" cy="85" r="7" fill="#F0785F"/>
+  <circle cx="112" cy="92" r="6" fill="#4CAF50"/>
+  <!-- Wordmark -->
+  <text x="100" y="148" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="22" fill="#F0785F">REY</text>
+  <text x="100" y="172" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="22" fill="#2E8A9A">POKE</text>
+  <!-- Waves -->
+  <path d="M35 185 Q55 175 75 185 T115 185 T155 185 T185 185" stroke="#2E8A9A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M35 192 Q55 182 75 192 T115 192 T155 192 T185 192" stroke="#1F6C7A" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+</svg>
